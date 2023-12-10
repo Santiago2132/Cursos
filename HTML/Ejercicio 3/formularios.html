@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+    <form id="miFormulario" action="resultados.html" method="GET">
+        <div>
+            <label for="nombreusuario">Nombre de usuario</label>
+            <input type="text" id="nombreusuario">
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password">
+            <button type="button" onclick="verContraseña()">Ver la contraseña</button>
+        </div>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            resetearCampos();
+        });
+
+        function resetearCampos() {
+            var formulario = document.getElementById("miFormulario");
+            formulario.reset();
+
+            // También puedes restablecer el tipo de campo de contraseña
+            var contraseñaInput = document.getElementById("password");
+            contraseñaInput.type = "password";
+        }
+
+        function verContraseña() {
+            var contraseñaInput = document.getElementById("password");
+            contraseñaInput.type = (contraseñaInput.type === "password") ? "text" : "password";
+        }
+    </script>
+</body>
+</html>
