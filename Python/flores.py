@@ -16,13 +16,13 @@ def dibujar_petalos(tortuga, radio):
     tortuga.setheading(heading)
 
 mi_tortuga = turtle.Turtle()
-mi_tortuga.speed(0)  # Dibuja lo más rápido posible
+mi_tortuga.speed(-1000)  # Dibuja lo más rápido posible
 
-dibujar_flor(mi_tortuga, 100, 36)
+dibujar_flor(mi_tortuga, 200,500)
 
 mi_tortuga.penup()
 mi_tortuga.goto(-50,-150)
 mi_tortuga.pendown()
-mi_tortuga.write("Te amo", font=("Arial", 16, "normal"))
+mi_tortuga.write("Te amo", font=("Arial", 100, "normal"))
 
 turtle.done()
