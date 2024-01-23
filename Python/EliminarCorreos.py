@@ -6,7 +6,7 @@ x_clic, y_clic = 950, 300
 
 # Bucle para realizar 3000 clics
 for i in range(1):
-    for _ in range(100):
+    for _ in range(1000):
         # Mueve el mouse a las coordenadas especificadas
         pyautogui.moveTo(x_clic, y_clic)
 
