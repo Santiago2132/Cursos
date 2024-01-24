@@ -18,7 +18,7 @@ def dibujar_petalos(tortuga, radio):
 mi_tortuga = turtle.Turtle()
 mi_tortuga.speed(-1000)  # Dibuja lo más rápido posible
 
-dibujar_flor(mi_tortuga, 200,500)
+dibujar_flor(mi_tortuga, 40,50)
 
 mi_tortuga.penup()
 mi_tortuga.goto(-50,-150)
