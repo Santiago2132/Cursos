@@ -2,11 +2,11 @@ import pyautogui
 import time
 
 # Define las coordenadas del punto donde quieres hacer clic
-x_clic, y_clic = 950, 300
+x_clic, y_clic = 760, 400
 
 # Bucle para realizar 3000 clics
 for i in range(1):
-    for _ in range(1000):
+    for _ in range(100):
         # Mueve el mouse a las coordenadas especificadas
         pyautogui.moveTo(x_clic, y_clic)
 
