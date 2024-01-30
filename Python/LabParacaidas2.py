@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def euler(t, y, dt, dydt):
+def euler(t, y, dt, dydt):# t=time, y=distance 
     return y + dt * dydt(t, y)
 
 def relative_error(y_true, y_pred):
